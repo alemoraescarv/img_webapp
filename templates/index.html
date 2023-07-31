@@ -1,9 +1,19 @@
-<h1>Here is a form</h1>
+<!DOCTYPE html>
+<html>
+<head>
 
-<form method="post">
-    Enter your name: <input name="name"> <br><br>
+    <title>Get running instances in GCP per project</title>
+</head>
+<body>
+    <form method="post">
+        Enter your project: <input name="project"> <br><br>
+    
+    
+        <button type="submit">submit</button>
+    </form>
 
-    Enter your email: <input name="email"> <br><br>
+    <h1>Results - list of VMs running in <h1 id="project">{{ project }}</h1> </h1>
+    <p id="details">{{ details }}</p>
+    
 
-    <button type="submit">submit</button>
-</form>
+
